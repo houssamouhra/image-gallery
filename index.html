@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="icon" type="image/png" href="favicon/fav.png" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex item-center justify-center min-h-screen bg-cyan-100">
+      <!-- Card Container -->
+      <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+        <!-- Menu Container -->
+        <div
+          class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end"
+        >
+          <!-- Menu Items -->
+          <div class="menu-hover">
+            <a href="#">Vector</a>
+            <div class="mx-2 mt-2"></div>
+          </div>
+          <div class="menu-hover">
+            <a href="#">Illustrations</a>
+            <div class="mx-2 mt-2"></div>
+          </div>
+          <div class="menu-hover">
+            <a href="#">Images</a>
+            <div class="mx-2 mt-2"></div>
+          </div>
+          <div class="menu-hover">
+            <a href="#">Icons</a>
+            <div class="mx-2 mt-2"></div>
+          </div>
+        </div>
+        <!-- Search Container -->
+        <div
+          class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0"
+        >
+          <!-- Input & svg icon -->
+          <div class="flex justify-between border-b">
+            <input
+              type="text"
+              class="ml-6 md:w-80 focus:outline-none placeholder:font-thin"
+              placeholder="Search"
+            />
+            <button>
+              <ion-icon
+                class="size-7 text-gray-300"
+                name="search-outline"
+              ></ion-icon>
+            </button>
+            <!-- Button  -->
+          </div>
+          <button
+            class="px-14 py-3 shadow-2xl rounded-lg border border-black bg-black text-lg text-white hover:bg-white hover:text-black transition-all duration-200"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!-- Gallery Container -->
+        <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="/images/image1.jpg" class="w-72 rounded-lg" alt="" />
+            <div class="img-hover">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm font-semibold">Abstract Painting</p>
+                  <p class="text-xs">245 likes &#10072; 35 shares</p>
+                </div>
+                <div class="flex items-center bookmark">
+                  <ion-icon
+                    name="bookmark-outline"
+                    class="size-5 cursor-pointer"
+                    id="outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="bookmark"
+                    class="size-5 cursor-pointer hidden"
+                    id="filled"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="relative group">
+            <img src="/images/image2.jpg" class="w-72 rounded-lg" alt="" />
+            <div class="img-hover">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm font-semibold">Abstract Painting</p>
+                  <p class="text-xs">245 likes &#10072; 35 shares</p>
+                </div>
+                <div class="flex items-center bookmark">
+                  <ion-icon
+                    name="bookmark-outline"
+                    class="size-5 cursor-pointer"
+                    id="outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="bookmark"
+                    class="size-5 cursor-pointer hidden"
+                    id="filled"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="relative group">
+            <img src="/images/image3.jpg" class="w-72 rounded-lg" alt="" />
+            <div class="img-hover">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm font-semibold">Abstract Painting</p>
+                  <p class="text-xs">245 likes &#10072; 35 shares</p>
+                </div>
+                <div class="flex items-center bookmark">
+                  <ion-icon
+                    name="bookmark-outline"
+                    class="size-5 cursor-pointer"
+                    id="outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="bookmark"
+                    class="size-5 cursor-pointer hidden"
+                    id="filled"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="relative group">
+            <img src="/images/image4.jpg" class="w-72 rounded-lg" alt="" />
+            <div class="img-hover">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm font-semibold">Abstract Painting</p>
+                  <p class="text-xs">245 likes &#10072; 35 shares</p>
+                </div>
+                <div class="flex items-center bookmark">
+                  <ion-icon
+                    name="bookmark-outline"
+                    class="size-5 cursor-pointer"
+                    id="outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="bookmark"
+                    class="size-5 cursor-pointer hidden"
+                    id="filled"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 5 -->
+          <div class="relative group">
+            <img src="/images/image5.jpg" class="w-72 rounded-lg" alt="" />
+            <div class="img-hover">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm font-semibold">Abstract Painting</p>
+                  <p class="text-xs">245 likes &#10072; 35 shares</p>
+                </div>
+                <div class="flex items-center bookmark">
+                  <ion-icon
+                    name="bookmark-outline"
+                    class="size-5 cursor-pointer"
+                    id="outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="bookmark"
+                    class="size-5 cursor-pointer hidden"
+                    id="filled"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div class="relative group">
+            <img src="/images/image6.jpg" class="w-72 rounded-lg" alt="" />
+            <div class="img-hover">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm font-semibold">Abstract Painting</p>
+                  <p class="text-xs">245 likes &#10072; 35 shares</p>
+                </div>
+                <div class="flex items-center bookmark">
+                  <ion-icon
+                    name="bookmark-outline"
+                    class="size-5 cursor-pointer"
+                    id="outline"
+                  ></ion-icon>
+                  <ion-icon
+                    name="bookmark"
+                    class="size-5 cursor-pointer hidden"
+                    id="filled"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
